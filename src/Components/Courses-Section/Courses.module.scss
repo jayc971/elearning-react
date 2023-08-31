@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap');
+
+:root{
+  --common-color: #f0a32f;
+  --nav-item-color: #0a2b1e;
+  --common-bg-color: #0a2b1eb2;
+}
+
+.single__course__item{
+  padding: 15px;
+}
+
+.course__img img{
+  border-radius: 10px;
+}
+
+.enroll{
+  a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .9rem;
+    color: var(--common-color);
+    transition: 0.5s;
+    &:hover{
+      border-radius: 50px;
+      border: none;
+      padding: 2px 10px;
+
+      background: var(--common-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+    }
+  }
+}
+
+.lessons, .students, .rating{
+  font-size: .9rem;
+  color: var(--common-bg-color);
+  font-weight: 500;
+  i{
+    font-weight: 400;
+  }
+}
+
+.course__details{
+  position: relative;
+  min-height: 9rem;
+  div{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    &:last-child{
+      bottom: 1rem;
+    }
+  }
+}
+
+.course__title{
+  line-height: 2rem;
+}
+
+.see__all__parent{
+  .see__all{
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    margin: 4px;
+    color: #fff;
+    transition: 0.5s;
+    background: var(--common-color);
+    font-size: 20px;
+    font-weight: 600;
+    &:hover{
+      color: var(--common-color);
+      border: 2px solid var(--common-color);
+      background: transparent;
+    }
+  }
+}

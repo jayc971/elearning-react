@@ -1,0 +1,37 @@
+
+:root{
+  --common-color: #f0a32f;
+  --nav-item-color: #0a2b1e;
+  --common-bg-color: #0a2b1eb2;
+}
+
+*{
+  color: var(--common-bg-color);
+}
+
+.about__img{
+  img{
+    border-radius: 15px;
+  }
+  }
+
+.about__counter{
+  display: flex;
+}
+
+
+.counter{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--common-color);
+}
+
+.counter__title{
+  font-size: 1.1rem;
+  color: var(--common-color);
+  font-weight: 500;
+}
+
+.about__content{
+  padding-left: 20px;
+}

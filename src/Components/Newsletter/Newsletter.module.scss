@@ -1,0 +1,40 @@
+:root{
+  --common-color: #f0a32f;
+  --nav-item-color: #0a2b1e;
+  --common-bg-color: #0a2b1eb2;
+}
+
+.btn__subscribe{
+  color: #fff;
+  transition: 0.5s;
+  background: var(--common-color);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.input{
+  border-radius: 5px;
+  border: unset;
+  text-indent: 10px;
+}
+
+.newsletter{
+  background: var(--common-color);
+  color: #fff;
+  padding: 60px;
+  border-radius: 15px;
+  h2{
+    color: #fff;
+  }
+}
+
+.subscribe{
+  padding: 7px 10px;
+  background: #fff;
+  width: 45%;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

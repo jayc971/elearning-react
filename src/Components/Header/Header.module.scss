@@ -1,0 +1,141 @@
+:root{
+    --common-color: #f0a32f;
+    --nav-item-color: #0a2b1e;
+    --common-bg-color: #0a2b1eb2;
+    --off-white: #FAF9F6;
+}
+
+$off-white: var(--off-white);
+$common-bg-color: var(--common-bg-color);
+
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: $off-white;
+
+    .nav__item {
+
+        color: var(--nav-item-color);
+        a{
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: var(--nav-item-color);
+            text-decoration: none;
+
+        }
+        :hover{
+            color: var(--common-color);
+        }
+    }
+}
+
+.logo{
+    h2{
+        i{
+            color:var(--common-color);
+        }
+    }
+}
+
+.nav__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    column-gap: 1.3rem;
+}
+
+
+.nav__right {
+
+    p{
+        font-weight: 500;
+        color: #0a2b1e;
+        font-size: 1.1rem;
+        i{
+            font-size: 1.3rem;
+            color: var(--common-color);
+        }
+    }
+    .login__btn__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .signup__btn__link{
+        text-decoration: none;
+    }
+}
+
+.mobile__menu{
+    cursor: pointer;
+    display: none;
+    span{
+        i{
+            font-size: 1.4rem;
+            color: var(--nav-item-color);
+        }
+    }
+}
+.login__btn__parent{
+    line-height: 0px;
+    .btn__login{
+        font-weight: 500;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        border: none;
+        padding: 5px 15px;
+        margin: 4px;
+        color: #fff;
+        transition: 0.5s;
+        background: var(--common-color);
+        &:hover{
+            color: var(--common-color);
+            outline: 2px solid var(--common-color);
+            background: transparent;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 992px) {
+    .nav__menu{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: $common-bg-color;
+        z-index: 99;
+        display: none;
+    }
+
+    .nav__list{
+        position: absolute;
+        background: #fff;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 99;
+        padding-top: 80px;
+    }
+
+    .mobile__menu{
+        display: block;
+    }
+
+    .nav__right{
+        display: none;
+    }
+
+    .active__menu{
+        display: block;
+    }
+}
+

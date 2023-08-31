@@ -1,0 +1,82 @@
+:root{
+  --bgcolor: #6233b9;
+  --fontcolor: #eadbfb;
+  --common-color: #f0a32f;
+  --nav-item-color: #0a2b1e;
+  --common-bg-color: #0a2b1eb2;
+}
+
+
+.form{
+  background-color: var(--bgcolor);
+  padding: 1rem;
+  width: 20rem;
+}
+
+.form label{
+  display: block;
+  margin-bottom: 0.05rem;
+  color: #eadbfb;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form textarea{
+  width: 100%;
+}
+
+.actions{
+  justify-content: flex-end;
+  gap: .5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.actions .cancel{
+  text-decoration: none;
+  color: var(--common-color);
+}
+
+input{
+  border-radius: 50px;
+  outline: 1px solid var(--common-bg-color);
+  border-style: none;
+  text-indent: 15px;
+  &:focus{
+    outline: 1px solid var(--common-color);
+  }
+}
+
+.actions button, .button {
+
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 15px;
+    margin: 4px;
+    color: #fff;
+    transition: 0.5s;
+    background: var(--common-color);
+    &:hover{
+      color: var(--common-color);
+      outline: 2px solid var(--common-color);
+      background: transparent;
+    }
+
+}
+
+.actions button:not(:last-child),  .button:not(:last-child) {
+  border: none;
+}
+
+.actions button:hover, .button:hover{
+  transition: .5s;
+}
+
+.form{
+  background: #fff;
+}
