@@ -18,7 +18,7 @@ function Login(){
                         <i className={"ri-user-line"}></i><input id={"body"} name={"body"} required/>
                     </p>
                     <p className={"d-flex gap-2"}>
-                        <i className={"ri-lock-line"}></i><input id={"name"} type={"text"} name={"author"} required/>
+                        <i className={"ri-lock-line"}></i><input id={"name"} type={"password"} name={"author"} required/>
                     </p>
                     <p className={styles.actions}>
                         <Link   className={`${styles.cancel}`} to={".."} type={"button"}>Cancel</Link>
